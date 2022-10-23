@@ -1,0 +1,76 @@
+.container {
+  position: fixed;
+  top: 0;
+  width: 40vw;
+  height: 100vh;
+  overflow-y: hidden;
+  margin-left: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+}
+.close {
+  margin-left: 95%;
+  margin-bottom: 0.8rem;
+  width: 85%;
+  margin-left: 8.5%;
+  display: flex;
+  justify-content: flex-end;
+}
+.content {
+  width: 85%;
+  margin-left: 7.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main_image_container {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+}
+.main_image {
+  border-radius: 20px;
+}
+.previous,
+.next {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11;
+}
+.previous {
+  left: 0%;
+  transform: translateX(-50%);
+}
+.next {
+  right: 0%;
+  transform: translateX(50%);
+}
+.slider_images {
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.previous_image {
+  width: 20px;
+  height: 20px;
+}
+.each_slidr_image {
+  border: 1.5px solid transparent;
+}
+.each_slider_image_active {
+  border-radius: 10px;
+  border: 2.5px solid red;
+  opacity: 0.5;
+}

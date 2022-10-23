@@ -1,0 +1,57 @@
+.container {
+  width: 95vw;
+  margin-left: 2.5vw;
+  background-color: white;
+  z-index: 12;
+  position: absolute;
+  top: 0.8rem;
+  border-radius: 20px;
+}
+.head {
+  font-size: 1.3rem;
+  padding: 1.5rem 2rem;
+}
+.content {
+  border-top: 1px solid gray;
+  padding: 1.5rem 2rem;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.thumbnails {
+  border-radius: 10px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.8;
+}
+.delete:hover {
+  cursor: pointer;
+}
+.checkout_btn {
+  width: 100%;
+  border-radius: 10px;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  border: 0;
+  margin-top: 1.5rem;
+  padding-block: 15px;
+}
+.checkout_btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+@media (min-width: 600px) {
+  .container {
+    width: 25%;
+    margin-right: 10%;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    margin-top: -4.5rem;
+    box-shadow: -1px 11px 20px 0px #a09898;
+  }
+}
