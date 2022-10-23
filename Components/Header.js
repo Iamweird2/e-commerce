@@ -138,8 +138,8 @@ export default function Header({ body, actualBody }) {
             <Image
               src={Avatar}
               alt="avatar"
-              height={isDesktop ? "70" : "30"}
-              width={isDesktop ? "70" : "30"}
+              height={isDesktop ? "50" : "30"}
+              width={isDesktop ? "50" : "30"}
             />
           </span>
         </>

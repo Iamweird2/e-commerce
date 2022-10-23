@@ -136,6 +136,7 @@ export default function Home() {
               className={styles.image}
               layout="fill"
               objectFit="cover"
+              objectPosition="top"
               onClick={() => {
                 isDesktop ? setModal(true) : "";
               }}

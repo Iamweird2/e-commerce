@@ -39,7 +39,7 @@ export default function Modal({
   return (
     <div className={styles.container}>
       <div className={styles.close} onClick={() => setModal(false)}>
-        <Image src={close} alt="menu close" width={30} height={30} />
+        <Image src={close} alt="menu close" width={20} height={20} />
       </div>
       <div className={styles.content}>
         <div className={styles.main_image_container}>
@@ -53,8 +53,8 @@ export default function Modal({
             <Image
               src={left}
               alt="previous"
-              width={30}
-              height={30}
+              width={18}
+              height={18}
               onClick={() => goToPrevious()}
             />
           </span>
@@ -62,8 +62,8 @@ export default function Modal({
             <Image
               src={right}
               alt="next"
-              width={30}
-              height={30}
+              width={18}
+              height={18}
               onClick={() => goToNext()}
             />
           </span>
