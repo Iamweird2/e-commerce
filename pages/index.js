@@ -122,6 +122,7 @@ export default function Home() {
           ImageArray={ImageArray}
           left={left}
           right={right}
+          priority
         />
       ) : (
         ""
