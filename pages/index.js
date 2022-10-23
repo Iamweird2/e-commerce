@@ -31,6 +31,8 @@ export default function Home() {
   const totalCost = prevCost * cartCounter;
   const [isDesktop, setDesktop] = useState(false);
   const [modal, setModal] = useState(false);
+  const sick = `they'll`;
+
   //useEffect for background opacity
   useEffect(() => {
     const onPageLoad = () => {
@@ -190,10 +192,9 @@ export default function Home() {
           <h3 className={styles.mini_name}> SNEAKERS COMPANY</h3>
           <h1 className={styles.name}> Fall Limited Edition Sneakers</h1>
           <p className={styles.note}>
-            {" "}
             These low-profile sneakers are your perfect casual wear companion.
-            featuring a durable rubber outer sole, they`&apos`ll withstand
-            everything the weather can offer.{" "}
+            featuring a durable rubber outer sole, {sick} withstand everything
+            the weather can offer.
           </p>
           <div className={styles.price_range}>
             <span className={styles.now}>{`$${prevCost.toLocaleString("en-US", {
